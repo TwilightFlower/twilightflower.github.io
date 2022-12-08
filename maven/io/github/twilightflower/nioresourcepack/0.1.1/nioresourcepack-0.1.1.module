@@ -1,0 +1,99 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.twilightflower",
+    "module": "nioresourcepack",
+    "version": "0.1.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "nioresourcepack-0.1.1.jar",
+          "url": "nioresourcepack-0.1.1.jar",
+          "size": 10858,
+          "sha512": "b08f0c358dc202f92fe20eb12105a1ef3d1a3d98351829819bc29ace91c8348c2d5131cd0aad69f08ec5446e3e92ed15db017a985bbccabbda2d93534988bf34",
+          "sha256": "ea5e16844922203012fbedd048009c3bec0faddbcad1ee6583a9fce786e0a3a0",
+          "sha1": "983903c1aea6901ad163f0180f6e45b64c39d42f",
+          "md5": "7e9c201cfcd8f7b4b8b5aae48b8591da"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.quiltmc",
+          "module": "quilt-loader",
+          "version": {
+            "requires": "0.17.4"
+          },
+          "excludes": [
+            {
+              "group": "net.fabricmc",
+              "module": "fabric-loader"
+            },
+            {
+              "group": "net.fabricmc.fabric-api",
+              "module": "*"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "nioresourcepack-0.1.1.jar",
+          "url": "nioresourcepack-0.1.1.jar",
+          "size": 10858,
+          "sha512": "b08f0c358dc202f92fe20eb12105a1ef3d1a3d98351829819bc29ace91c8348c2d5131cd0aad69f08ec5446e3e92ed15db017a985bbccabbda2d93534988bf34",
+          "sha256": "ea5e16844922203012fbedd048009c3bec0faddbcad1ee6583a9fce786e0a3a0",
+          "sha1": "983903c1aea6901ad163f0180f6e45b64c39d42f",
+          "md5": "7e9c201cfcd8f7b4b8b5aae48b8591da"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "nioresourcepack-0.1.1-sources.jar",
+          "url": "nioresourcepack-0.1.1-sources.jar",
+          "size": 3653,
+          "sha512": "2b726ccdc878c9f3363f51159ffa785382ab9b26b69720521271afdaa676131ef170fcc42473b0f89000c4f0742eff600551284e39cd4f0ae90f882e424e1a43",
+          "sha256": "7c6280fa15560198ff48189af9e54df3e0dbe0704e6568cff35994ba2a1fa760",
+          "sha1": "3e4754fc10f72926b2072b89f1a07164530fd344",
+          "md5": "f2224041392d1243a36df907f883b23e"
+        }
+      ]
+    }
+  ]
+}
